@@ -1,0 +1,28 @@
+{
+	"name": "Traffic",
+	"version": "0.0.0",
+	"description": "Traffic",
+	"homepage_url": "https://github.com/awesome-templates/browser-extension-template",
+	"manifest_version": 2,
+	"minimum_chrome_version": "74",
+	"icons": {
+		"128": "traffic.png"
+	},
+	"browser_action": {},
+	"permissions": [
+		"https://*.googleapis.com/",
+		"storage",
+		"geolocation"
+	],
+	"options_ui": {
+		"chrome_style": true,
+		"page": "options.html"
+	},
+	"background": {
+		"persistent": false,
+		"scripts": [
+			"browser-polyfill.min.js",
+			"background.js"
+		]
+	}
+}
